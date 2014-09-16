@@ -29,8 +29,8 @@ and fill in the informations about your sieve server.
 In this example we have a script that provides imap flags for messages that satisfy certain rules.
 ( You can integrate this functionality with to those of this other plugin https://github.com/20tab/raw_managesieve )
 
+![ScreenShot](https://raw.githubusercontent.com/20tab/raw_managesieve/master/screenshot.png)
 
-
-
+As you can see you can add/delete/modify as many scripts you want and for each one you can choose if you want it to be activated or deactivated. <b>Remeber that in sieve only one script at a time can be active on the server</b>
 
 
