@@ -1,0 +1,31 @@
+<roundcube:object name="doctype" value="html5" />
+<html>
+    
+    <head>
+        <title><roundcube:object name="pagetitle" /></title>
+        <roundcube:include file="/includes/links.html" />
+    </head>
+    
+    <body class="iframe<roundcube:exp expression="env:task != 'mail' ? ' floatingbuttons' : ' mail'" />">
+
+        <div id="filter-form" class="boxcontent">
+            <roundcube:object name="plugin.rawcodeform" />
+
+            <div id="footer">
+                <div class="footerleft formbuttons floating">
+                    <roundcube:button command="plugin.rawsievesave" type="input" class="button mainaction save-code" label="raw_managesieve.save" />
+
+                    <roundcube:if condition="env:formediting" />
+                        <roundcube:button command="plugin.rawsieveactivate" type="input" class="button mainaction save-code" label="raw_managesieve.activate" />
+                        <roundcube:button command="plugin.rawsievedeactivate" type="input" class="button mainaction save-code disabled" label="raw_managesieve.deactivate" />
+                    <roundcube:endif />
+
+                </div>
+            </div>
+        </div>
+        
+        <roundcube:include file="/includes/footer.html" />
+
+    </body>
+
+</html>

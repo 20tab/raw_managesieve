@@ -1,0 +1,195 @@
+#filtersetslistbox
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+}
+
+#filtersscreen
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 162px;
+}
+
+#filterslistbox
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 180px;
+}
+
+#filter-box
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 192px;
+}
+
+#filter-frame
+{
+  border-radius: 4px;
+}
+
+#filterslist,
+#filtersetslist
+{
+  width: 100%;
+  table-layout: fixed;
+}
+
+#filterslist tbody td,
+#filtersetslist tbody td
+{
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#filterslist tbody tr.disabled td,
+#filtersetslist tbody tr.disabled td
+{
+  color: #87A3AA;
+}
+
+#filtersetslist tbody td
+{
+  font-weight: bold;
+}
+
+#filterslist tbody tr.filtermoveup td
+{
+  border-top: 2px dotted #555;
+  padding-top: 5px;
+}
+
+#filterslist tbody tr.filtermovedown td
+{
+  border-bottom: 2px dotted #555;
+  padding-bottom: 4px;
+}
+
+/* smart multi-row input field */
+.listarea
+{
+  border: 1px solid #B2B2B2;
+  border-radius: 4px;
+  box-shadow: inset 0 0 2px 1px rgba(0,0,0, 0.1);
+  -moz-box-shadow: inset 0 0 2px 1px rgba(0,0,0, 0.1);
+  -webkit-box-shadow: inset 0 0 2px 1px rgba(0,0,0, 0.1);
+  -o-box-shadow: inset 0 0 2px 1px rgba(0,0,0, 0.1);
+  margin: 0;
+  padding: 2px;
+  display: inline-block;
+  max-height: 59px;
+  overflow-y: auto;
+}
+
+td.rowtargets > span.listarea
+{
+  vertical-align: top;
+  margin-top: 2px;
+}
+
+.listelement
+{
+  display: block;
+  white-space: nowrap;
+  background-color: #fff;
+  border-top: 1px solid #e2e2e2;
+  height: 14px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  line-height: 14px;
+}
+
+.listarea.error .listelement
+{
+  background-color: #FFFFC4;
+}
+
+.listelement:first-child
+{
+  border-top: none;
+}
+
+#filter-form .listelement input
+{
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  vertical-align: top;
+  height: 14px;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 14px;
+  background-color: transparent;
+}
+
+.listelement input:focus
+{
+  box-shadow: none;
+}
+
+.listelement .reset
+{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(images/erase.png?v=3052.453) -1px -1px no-repeat #eee;
+  cursor: pointer;
+}
+
+
+/* Raw form style */
+
+body.iframe {
+  margin: 0px;
+}
+
+#raw_script_form fieldset {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+#filter-form legend {
+  color: #000 !important;
+  font-size: 14px;
+}
+
+.codetextarea {
+  border: 1px solid #ccc;
+  border-radius: 0;
+  font-size: 14px;
+  resize: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

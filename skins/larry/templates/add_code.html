@@ -1,0 +1,48 @@
+<roundcube:object name="doctype" value="html5" />
+<html>
+<head>
+<title><roundcube:object name="pagetitle" /></title>
+<roundcube:include file="/includes/links.html" />
+</head>
+<body class="noscroll">
+
+<roundcube:include file="/includes/header.html" />
+
+<div id="mainscreen" class="offset">
+
+    <roundcube:include file="/includes/settingstabs.html" />
+
+    <div id="settings-right">
+
+        <div id="filtersetslistbox" class="uibox listbox">
+            <h2 class="boxtitle"><roundcube:label name="raw_managesieve.filtersets" /></h2>
+
+            <div class="scroller withfooter">
+                <roundcube:object name="plugin.filterslist" />
+            </div>
+
+            <div class="boxfooter">
+                <roundcube:button command="plugin.rawsieveadd" type="link" title="raw_managesieve.add_filter" class="listbutton add" classAct="listbutton add" innerClass="inner" content="+" />
+                <roundcube:button command="plugin.rawsievedelete" type="link" title="raw_managesieve.delete_filter" class="listbutton delete" classAct="listbutton delete" innerClass="inner" content="x" />
+            </div>
+
+        </div>
+
+        <div id="filter-box" class="uibox contentbox">
+            <div class="iframebox">
+                <roundcube:object name="plugin.filterframe" id="filter-frame" style="width:100%; height:100%" frameborder="0" src="/watermark.html" />
+
+            </div>
+    </div>
+
+</div>
+
+<roundcube:include file="/includes/footer.html" />
+
+<script type="text/javascript">
+  new rcube_splitter({ id:'rawsievesplitter1', p1:'#filtersetslistbox', p2:'#filter-box',
+          orientation:'v', relative:true, start:156, min:120, size:12 }).init();
+</script>
+
+</body>
+</html>
